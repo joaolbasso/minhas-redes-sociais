@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: url('../imagens/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+section#celular {
+    position: absolute;
+    background-color: blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 246px;
+    height: 514px;
+    background: url('../imagens/celular.png') no-repeat;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    position: relative;
+    border-radius: 50%;
+    text-align: right;
+    margin: 8px;
+    box-sizing: border-box;
+    
+}
+
+section#redes-sociais {
+    margin-left: 20px;
+    text-align: left;
+}
+
+iframe#tela {
+    position: relative;
+    top: 14.3px;
+    left: 11.9px;
+    width: 221px;
+    height: 481px;
+    border-radius: 9px;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.603);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+    transition: transform 0.3s, border 0.3;
+}
